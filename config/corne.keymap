@@ -46,7 +46,7 @@
         compatible = "zmk,combos";
         combo {
                 timeout-ms = <50>;
-                key-positions = < 8 9 10>;
+                key-positions = < 7 8 9>;
                 bindings = <&kp RET>;
         };
     };
