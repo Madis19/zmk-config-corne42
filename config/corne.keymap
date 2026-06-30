@@ -47,7 +47,7 @@
         combo {
                 timeout-ms = <50>;
                 key-positions = < 8 9 10>;
-                binding = <&kp RET>;
+                bindings = <&kp RET>;
         };
     };
 
