@@ -35,8 +35,9 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <150>;
+            require-prior-idel-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -45,7 +46,7 @@
     combos {
         compatible = "zmk,combos";
         combo {
-                timeout-ms = <50>;
+                timeout-ms = <100>;
                 key-positions = < 7 8 9>;
                 bindings = <&kp RET>;
         };
@@ -62,7 +63,7 @@
 &kp ESC    &kp Q        &kp W       &kp E        &kp R        &kp T              &kp Y      &kp U        &kp I        &kp O       &kp P           &kp BSLH
 &kp DOT    &hm LCTRL A  &hm LALT S  &hm LGUI D   &hm LSHFT F  &kp G              &kp H      &hm RSHFT J  &hm RGUI K   &hm RALT L  &hm RCTRL SEMI  &kp SQT
 &kp COMMA   &kp Z        &kp X       &kp C        &kp V        &kp B              &kp N      &kp M        &kp LBKT     &kp RBKT    &kp FSLH        &kp EQUAL
-                                    &kp DEL      &mo LWR      &kp BSPC           &kp SPACE  &mo RSE      &mo RIGER
+                                    &kp DEL      &kp BSPC      &mo LWR           &mo RSE  &kp SPACE      &mo RIGER
             >;
         };
 
